@@ -5,7 +5,13 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #08001f, #30197d);
+    color: #fff;
+    position: relative;
+}
 h1{
     text-align: center;
     font-size: 36px;
@@ -26,7 +32,7 @@ form{
     box-shadow: 0 0 6px rgb(0, 0, 0, 0.2);
     border-radius: 5px;
     font-size: 18px;
-    color: #3333;
+    color: #ffff;
 }
 #search-button{
     padding: 10px 20px;
@@ -38,7 +44,11 @@ form{
     cursor: pointer;
     border-radius: 5px;
     margin-left: 8px;
+    transition: 0.3s ease;
 
+}
+#search-button:hover{
+    transform: translate(-1px, -2px);
 }
 .search-results{
     display: flex;
@@ -52,25 +62,29 @@ form{
     width: 30%;
     height: 100%;
     border-radius: 5px;
-    box-shadow: 0 0 6px rgb(0, 0, 0, 0.2);
+    box-shadow: 0 0 6px rgba(230, 230, 230, 0.836);
     overflow: hidden;
 }
 .search-result img{
     width: 100%;
     height: 200px;
     object-fit: cover;
-    transition: opacity 0.2s ease-in-out;
+    transition: 0.5s ease;
 }
 .search-result img:hover{
-    opacity: 0.8;
+    transform: translate(-1px, -4px);
 }
 .search-result a{
     text-decoration: none;
     text-transform: capitalize;
-    color: #3333;
+    color: #f7f7f7;
     display: block;
     padding: 10px;
     font-size: 20px;
+    transition: 0.3s ease;
+}
+.search-result a:hover{
+    padding-left: 5px;
 }
 #show-more-button{
     font-size: 18px;
